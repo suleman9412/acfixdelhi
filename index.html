@@ -21,16 +21,16 @@
   <meta property="og:image" content="https://acfixdelhi.co.in/og-image.jpg" />
 
   <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-18000819886"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18000819886"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-  gtag('config', 'AW-18000819886');
-</script>
+    gtag('config', 'AW-18000819886');
+  </script>
 
-  
+
 
   <!-- Schema.org LocalBusiness Structured Data -->
   <script type="application/ld+json">
@@ -40,7 +40,7 @@
     "name": "ACFIX Delhi",
     "description": "Independent AC repair service in Delhi NCR. Specialising in Split AC, Window AC repair, gas refill, installation and deep service. MSME registered.",
     "url": "https://acfixdelhi.co.in/",
-    "telephone": "+91-9756848356",
+    "telephone": "+91-6398172122",
     "email": "care@acfixdelhi.co.in",
     "address": {
       "@type": "PostalAddress",
@@ -69,7 +69,7 @@
       "value": "UDYAM-DL-08-0099205"
     },
     "sameAs": [
-      "https://wa.me/919756848356"
+      "https://wa.me/919411078560"
     ]
   }
   </script>
@@ -1503,7 +1503,7 @@
           <div class="ci-icon">💬</div>
           <h4>WhatsApp</h4>
           <p>Quick responses via WhatsApp chat</p>
-          <a href="https://wa.me/919756848356?text=Hi, I need AC repair service" class="phone-reveal-btn"
+          <a href="https://wa.me/919411078560?text=Hi, I need AC repair service" class="phone-reveal-btn"
             style="margin-top:12px;padding:10px 20px;font-size:15px;background:#25D366;box-shadow:none;display:inline-flex;">WhatsApp
             Us</a>
         </div>
@@ -1569,7 +1569,7 @@
   </footer>
 
   <!-- ══ WHATSAPP FLOAT ══ -->
-  <a href="https://wa.me/919756848356?text=Hi, I need AC repair service in Delhi NCR" class="whatsapp-float"
+  <a href="https://wa.me/919411078560?text=Hi, I need AC repair service in Delhi NCR" class="whatsapp-float"
     title="Chat on WhatsApp">💬</a>
 
   <script>
@@ -1579,34 +1579,14 @@
       item.classList.toggle('open');
     }
 
-    // ── Phone Reveal (click-to-call, Google Ads friendly)
-    const phoneNumber = '+91-9756848356';
-    const revealed = {};
-
+    // ── Phone Call (click-to-call, Google Ads friendly — number never shown on page)
     function revealPhone(context) {
-      if (revealed[context]) {
-        // Already revealed — initiate call
-        window.location.href = 'tel:+919756848356';
-        // Track conversion in Google Ads
-        if (typeof gtag !== 'undefined') {
-          gtag('event', 'conversion', { 'send_to': 'AW-17986273305' });
-        }
-        return;
+      // Track conversion in Google Ads
+      if (typeof gtag !== 'undefined') {
+        gtag('event', 'conversion', { 'send_to': 'AW-17986273305' });
       }
-      revealed[context] = true;
-
-      if (context === 'hero') {
-        const btn = document.getElementById('hero-phone-btn');
-        btn.textContent = '📞 ' + phoneNumber + ' — Tap Again to Call';
-        btn.classList.add('revealed');
-      } else if (context === 'nav') {
-        const btn = document.getElementById('nav-phone-btn');
-        btn.textContent = phoneNumber;
-      } else if (context === 'contact') {
-        const btn = document.getElementById('contact-phone-btn');
-        btn.textContent = '📞 ' + phoneNumber + ' — Tap to Dial';
-        btn.classList.add('revealed');
-      }
+      // Directly initiate call — phone number not displayed on website
+      window.location.href = 'tel:+916398172122';
     }
 
     // ── Form: show success if redirected back with ?booked=1
