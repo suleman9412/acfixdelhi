@@ -56,7 +56,7 @@
       "longitude": 77.2090
     },
     "areaServed": ["Delhi", "Noida", "Gurgaon", "Faridabad", "Ghaziabad", "Greater Noida"],
-    "priceRange": "₹299–₹1999",
+    "priceRange": "₹499–₹3999",
     "openingHoursSpecification": {
       "@type": "OpeningHoursSpecification",
       "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
@@ -69,7 +69,7 @@
       "value": "UDYAM-DL-08-0099205"
     },
     "sameAs": [
-      "https://wa.me/919411078560"
+      "https://acfixdelhi.co.in/"
     ]
   }
   </script>
@@ -1003,13 +1003,13 @@
       font-weight: 600;
     }
 
-    /* ── WHATSAPP FLOAT ── */
-    .whatsapp-float {
+    /* ── CALL FLOAT ── */
+    .call-float {
       position: fixed;
       bottom: 24px;
       right: 24px;
       z-index: 999;
-      background: #25D366;
+      background: var(--orange);
       color: var(--white);
       width: 56px;
       height: 56px;
@@ -1017,13 +1017,18 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      font-size: 28px;
       text-decoration: none;
-      box-shadow: 0 4px 20px rgba(37, 211, 102, 0.45);
+      box-shadow: 0 4px 20px rgba(255, 107, 0, 0.45);
       transition: transform 0.2s;
     }
 
-    .whatsapp-float:hover {
+    .call-float svg {
+      width: 26px;
+      height: 26px;
+      fill: #fff;
+    }
+
+    .call-float:hover {
       transform: scale(1.1);
     }
 
@@ -1170,7 +1175,7 @@
         <div class="pricing-row">
           <div class="service-name">Visiting / Diagnosis Charge <small>Includes technician visit + diagnosis</small>
           </div>
-          <div class="price">₹299</div>
+          <div class="price">₹499</div>
         </div>
         <div class="pricing-row">
           <div class="service-name">AC Gas Refill — R22 <small>Includes gas + labour</small></div>
@@ -1186,7 +1191,7 @@
         </div>
         <div class="pricing-row">
           <div class="service-name">AC Installation <small>Split or window AC</small></div>
-          <div class="price">₹999</div>
+          <div class="price">₹1999</div>
         </div>
         <div class="pricing-row">
           <div class="service-name">Compressor / PCB Repair <small>After inspection quote</small></div>
@@ -1489,7 +1494,7 @@
     <div class="container" style="text-align:center;">
       <div class="section-label">Contact Us</div>
       <h2 class="section-title">Get In Touch</h2>
-      <p class="section-sub" style="margin: 0 auto 32px;">Call, WhatsApp, or email us — we respond fast.</p>
+      <p class="section-sub" style="margin: 0 auto 32px;">Call or email us — we respond fast.</p>
 
       <div class="contact-grid">
         <div class="contact-info-card">
@@ -1500,12 +1505,11 @@
             style="margin-top:12px;padding:10px 20px;font-size:15px;">Tap to Call</button>
         </div>
         <div class="contact-info-card">
-          <div class="ci-icon">💬</div>
-          <h4>WhatsApp</h4>
-          <p>Quick responses via WhatsApp chat</p>
-          <a href="https://wa.me/919411078560?text=Hi, I need AC repair service" class="phone-reveal-btn"
-            style="margin-top:12px;padding:10px 20px;font-size:15px;background:#25D366;box-shadow:none;display:inline-flex;">WhatsApp
-            Us</a>
+          <div class="ci-icon">�</div>
+          <h4>Call Us (Toll Free)</h4>
+          <p>1800-202-6242 · 8 AM – 9 PM, 7 days</p>
+          <a href="tel:18002026242" class="phone-reveal-btn"
+            style="margin-top:12px;padding:10px 20px;font-size:15px;display:inline-flex;">Call Now</a>
         </div>
         <div class="contact-info-card">
           <div class="ci-icon">✉️</div>
@@ -1568,9 +1572,13 @@
     </div>
   </footer>
 
-  <!-- ══ WHATSAPP FLOAT ══ -->
-  <a href="https://wa.me/919411078560?text=Hi, I need AC repair service in Delhi NCR" class="whatsapp-float"
-    title="Chat on WhatsApp">💬</a>
+  <!-- ══ CALL FLOAT ══ -->
+  <a href="tel:18002026242" class="call-float" title="Call Us Now">
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <path
+        d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24 11.47 11.47 0 003.58.57 1 1 0 011 1V21a1 1 0 01-1 1A17 17 0 013 5a1 1 0 011-1h3.5a1 1 0 011 1 11.47 11.47 0 00.57 3.58 1 1 0 01-.25 1.01l-2.2 2.2z" />
+    </svg>
+  </a>
 
   <script>
     // ── FAQ Toggle
@@ -1586,7 +1594,7 @@
         gtag('event', 'conversion', { 'send_to': 'AW-17986273305' });
       }
       // Directly initiate call — phone number not displayed on website
-      window.location.href = 'tel:+916398172122';
+      window.location.href = 'tel:18002026242';
     }
 
     // ── Form: show success if redirected back with ?booked=1
