@@ -2,27 +2,90 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="robots" content="index, follow" />
-    <title>Privacy Policy | Independent Stabilizer Service Center</title>
-    <meta name="description"
-        content="Privacy Policy for our independent voltage stabilizer repair service. Learn how we collect, use, and protect your personal information." />
-
+   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="index, follow" />
+  <title>AC Repair Service in Delhi NCR | Same Day | All Brands | ACFIX Delhi</title>
+  <meta name="description"
+    content="Independent AC repair service in Delhi NCR. Split AC, Window AC, gas refill, installation. All brands serviced. Same day visits available. MSME Registered: UDYAM-DL-08-0099205." />
+  <meta name="keywords"
+    content="AC repair Delhi, AC repair near me, split AC repair Delhi, AC gas refill Delhi, same day AC repair, window AC repair Delhi NCR" />
+  <link rel="canonical" href="https://acfixdelhi.co.in/" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link
-        href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@600;700&family=DM+Sans:wght@400;500;600&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&family=DM+Sans:wght@400;500;600&display=swap"
         rel="stylesheet">
+    <meta property="og:description"
+    content="Same day AC repair in Delhi NCR. All brands. MSME verified independent service. Udyam Reg: UDYAM-DL-08-0099205." />
+  <meta property="og:url" content="https://acfixdelhi.co.in/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://acfixdelhi.co.in/og-image.jpg" />
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18000819886"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'AW-18000819886');
+  </script>
+
+
+
+  <!-- Schema.org LocalBusiness Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "ACFIX Delhi",
+    "description": "Independent AC repair service in Delhi NCR. Specialising in Split AC, Window AC repair, gas refill, installation and deep service. MSME registered.",
+    "url": "https://acfixdelhi.co.in/",
+    "telephone": "+91-6398172122",
+    "email": "care@acfixdelhi.co.in",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "New Delhi",
+      "addressLocality": "Delhi",
+      "addressRegion": "Delhi",
+      "postalCode": "110001",
+      "addressCountry": "IN"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 28.6139,
+      "longitude": 77.2090
+    },
+    "areaServed": ["Delhi", "Noida", "Gurgaon", "Faridabad", "Ghaziabad", "Greater Noida"],
+
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+      "opens": "08:00",
+      "closes": "21:00"
+    },
+    "identifier": {
+      "@type": "PropertyValue",
+      "name": "MSME Udyam Registration",
+      "value": "UDYAM-DL-08-0099205"
+    },
+    "sameAs": [
+      "https://acfixdelhi.co.in/"
+    ]
+  }
+  </script>
 
     <style>
         :root {
             --blue: #0057FF;
+            --blue-dark: #003FCC;
             --dark: #0A0F1E;
-            --gray: #4A5568;
-            --light: #F7F9FC;
-            --white: #FFFFFF;
-            --border: #E2E8F0;
             --orange: #FF6B00;
+            --green: #00B86B;
+            --light: #F0F4FF;
+            --white: #fff;
+            --gray: #4A5568;
+            --border: #E2E8F0;
         }
 
         * {
@@ -35,7 +98,6 @@
             font-family: 'DM Sans', sans-serif;
             color: var(--dark);
             background: var(--white);
-            line-height: 1.7;
         }
 
         h1,
@@ -45,232 +107,789 @@
             letter-spacing: 0.02em;
         }
 
+        /* TOP PHONE BAR */
+        .top-bar {
+            background: #1a1a2e;
+            color: #CBD5E0;
+            text-align: center;
+            padding: 9px 16px;
+            font-size: 14px;
+            font-weight: 500;
+            letter-spacing: 0.03em;
+        }
+
+        .top-bar a {
+            color: #FFD600;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 15px;
+        }
+
+        /* NAV */
         nav {
-            background: var(--dark);
-            padding: 14px 24px;
+            background: var(--white);
+            border-bottom: 2px solid var(--blue);
             display: flex;
-            justify-content: space-between;
             align-items: center;
+            justify-content: space-between;
+            padding: 10px 20px;
             position: sticky;
             top: 0;
-            z-index: 100;
-            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.3);
+            z-index: 200;
+            box-shadow: 0 2px 12px rgba(0, 87, 255, 0.10);
         }
 
         .nav-logo img {
-            height: 36px;
-            filter: brightness(0) invert(1);
-            opacity: 0.85;
+            height: 44px;
+            display: block;
         }
 
-        .nav-back {
-            color: #CBD5E0;
+        .nav-cta {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .nav-phone {
+            background: var(--blue);
+            color: var(--white);
+            font-family: 'Rajdhani', sans-serif;
+            font-size: 16px;
+            font-weight: 700;
+            padding: 9px 18px;
+            border-radius: 6px;
             text-decoration: none;
-            font-size: 14px;
-            font-weight: 500;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            transition: background 0.2s;
         }
 
-        .nav-back:hover {
+        .nav-phone:hover {
+            background: var(--blue-dark);
+        }
+
+        /* HERO + FORM SECTION */
+        .hero-section {
+            background: linear-gradient(135deg, #0A0F1E 0%, #0D1A40 60%, #001A99 100%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .hero-banner {
+            width: 100%;
+            max-height: 400px;
+            object-fit: cover;
+            display: block;
+        }
+
+        /* BOOKING FORM */
+        .booking-wrap {
+            background: #0D1A40;
+            width: 100%;
+            padding: 30px 20px 36px;
+        }
+
+        .booking-wrap .book-head {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .booking-wrap .logo-in-form img {
+            height: 38px;
+            margin: 0 auto 8px;
+            display: block;
+        }
+
+        .booking-wrap h2 {
+            color: var(--white);
+            font-size: 20px;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            margin-bottom: 2px;
+        }
+
+        .booking-wrap p.sub {
+            color: #94A3B8;
+            font-size: 13px;
+        }
+
+        .booking-form {
+            max-width: 520px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .booking-form select,
+        .booking-form input {
+            width: 100%;
+            padding: 13px 14px;
+            border: 1.5px solid rgba(255, 255, 255, 0.15);
+            border-radius: 7px;
+            background: rgba(255, 255, 255, 0.07);
+            color: var(--white);
+            font-size: 15px;
+            font-family: 'DM Sans', sans-serif;
+            outline: none;
+            transition: border-color 0.2s;
+            appearance: none;
+        }
+
+        .booking-form select option {
+            background: #0D1A40;
             color: #fff;
         }
 
-        .page-header {
-            background: linear-gradient(135deg, var(--dark) 0%, #0D1733 100%);
-            padding: 48px 24px;
+        .booking-form select:focus,
+        .booking-form input:focus {
+            border-color: var(--blue);
+        }
+
+        .booking-form input::placeholder {
+            color: #94A3B8;
+        }
+
+        .btn-submit {
+            width: 100%;
+            background: var(--orange);
+            color: var(--white);
+            border: none;
+            padding: 16px;
+            border-radius: 8px;
+            font-size: 18px;
+            font-family: 'Rajdhani', sans-serif;
+            font-weight: 700;
+            letter-spacing: 0.05em;
+            cursor: pointer;
+            transition: background 0.2s;
+            margin-top: 4px;
+        }
+
+        .btn-submit:hover {
+            background: #e05e00;
+        }
+
+        .form-phone-row {
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .form-phone-row a {
+            color: #FFD600;
+            font-size: 17px;
+            font-weight: 700;
+            font-family: 'Rajdhani', sans-serif;
+            text-decoration: none;
+        }
+
+        /* INFO STRIP */
+        .info-strip {
+            background: var(--light);
+            padding: 22px 20px;
             text-align: center;
         }
 
-        .page-header h1 {
-            color: #fff;
-            font-size: clamp(28px, 5vw, 44px);
-            font-weight: 700;
-            margin-bottom: 10px;
-        }
-
-        .page-header p {
-            color: #94A3B8;
-            font-size: 15px;
-        }
-
-        .content {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 48px 24px 64px;
-        }
-
-        .content h2 {
-            font-size: 22px;
-            font-weight: 700;
+        .info-strip h3 {
+            font-size: 20px;
             color: var(--dark);
-            margin: 32px 0 10px;
-        }
-
-        .content p {
-            font-size: 15px;
-            color: var(--gray);
-            margin-bottom: 14px;
-        }
-
-        .content ul {
-            margin: 0 0 14px 20px;
-        }
-
-        .content ul li {
-            font-size: 15px;
-            color: var(--gray);
             margin-bottom: 6px;
         }
 
-        .content a {
-            color: var(--blue);
+        .info-strip p {
+            font-size: 14px;
+            color: var(--gray);
+            max-width: 640px;
+            margin: 0 auto 14px;
+            line-height: 1.6;
         }
 
-        .updated-date {
-            display: inline-block;
-            background: #E8F0FF;
-            color: #003FCC;
-            padding: 4px 12px;
-            border-radius: 5px;
+        .info-strip .cta-inline {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: var(--blue);
+            color: var(--white);
+            padding: 12px 28px;
+            border-radius: 8px;
+            font-family: 'Rajdhani', sans-serif;
+            font-weight: 700;
+            font-size: 17px;
+            text-decoration: none;
+            transition: background 0.2s;
+        }
+
+        .info-strip .cta-inline:hover {
+            background: var(--blue-dark);
+        }
+
+        .info-strip .badges {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 16px;
+        }
+
+        .badge-item {
+            display: flex;
+            align-items: center;
+            gap: 6px;
             font-size: 13px;
             font-weight: 600;
-            margin-bottom: 28px;
+            color: var(--dark);
         }
 
-        .highlight-box {
-            background: #FFF3CD;
-            border: 1px solid #FFC107;
-            border-radius: 10px;
-            padding: 16px 20px;
-            margin-bottom: 28px;
+        .badge-item .dot {
+            width: 8px;
+            height: 8px;
+            background: var(--green);
+            border-radius: 50%;
+            display: inline-block;
+        }
+
+        /* PRODUCT GRID */
+        .section {
+            padding: 40px 20px;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: clamp(22px, 4vw, 32px);
+            font-weight: 700;
+            color: var(--dark);
+            margin-bottom: 6px;
+        }
+
+        .section-sub {
+            text-align: center;
+            color: var(--gray);
             font-size: 14px;
-            color: #6B4900;
+            margin-bottom: 28px;
         }
 
-        footer {
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+            gap: 20px;
+            max-width: 960px;
+            margin: 0 auto;
+        }
+
+        .product-card {
+            border: 1.5px solid var(--border);
+            border-radius: 12px;
+            overflow: hidden;
+            text-align: center;
+            background: var(--white);
+            transition: transform 0.2s, box-shadow 0.2s;
+            cursor: pointer;
+        }
+
+        .product-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 24px rgba(0, 87, 255, 0.12);
+            border-color: var(--blue);
+        }
+
+        .product-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            background: #f5f7fa;
+        }
+
+        .product-card-label {
+            padding: 14px 12px;
+            font-family: 'Rajdhani', sans-serif;
+            font-size: 18px;
+            font-weight: 700;
+            color: var(--dark);
+        }
+
+        .product-card-label small {
+            display: block;
+            font-family: 'DM Sans', sans-serif;
+            font-size: 12px;
+            font-weight: 400;
+            color: var(--gray);
+            margin-top: 2px;
+        }
+
+        .product-card-badge {
+            background: var(--blue);
+            color: var(--white);
+            font-family: 'Rajdhani', sans-serif;
+            font-size: 13px;
+            font-weight: 700;
+            letter-spacing: 0.05em;
+            padding: 7px 12px;
+            margin: 0 12px 12px;
+            border-radius: 6px;
+            display: block;
+        }
+
+        /* WHY US */
+        .why-section {
             background: var(--dark);
+            padding: 40px 20px;
+        }
+
+        .why-section .section-title {
+            color: var(--white);
+        }
+
+        .why-section .section-sub {
+            color: #94A3B8;
+        }
+
+        .why-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+            gap: 16px;
+            max-width: 840px;
+            margin: 0 auto;
+        }
+
+        .why-card {
+            background: rgba(255, 255, 255, 0.06);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 12px;
+            padding: 24px 16px;
+            text-align: center;
+        }
+
+        .why-icon {
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+
+        .why-card h4 {
+            font-size: 16px;
+            font-weight: 700;
+            color: var(--white);
+            margin-bottom: 6px;
+        }
+
+        .why-card p {
+            font-size: 13px;
+            color: #94A3B8;
+        }
+
+        /* SEO KEYWORDS SECTION */
+        .keywords-section {
+            background: var(--light);
+            padding: 40px 20px;
+            max-width: 100%;
+        }
+
+        .keywords-section h2 {
+            font-size: 18px;
+            font-weight: 700;
+            color: var(--dark);
+            margin-bottom: 12px;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .kw-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-bottom: 20px;
+        }
+
+        .kw-tag {
+            background: var(--white);
+            border: 1px solid var(--border);
+            color: var(--blue-dark);
+            font-size: 13px;
+            padding: 5px 12px;
+            border-radius: 100px;
+            font-weight: 500;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background 0.15s;
+        }
+
+        .kw-tag:hover {
+            background: var(--blue);
+            color: var(--white);
+        }
+
+        .location-list {
+            font-size: 13px;
+            color: var(--gray);
+            line-height: 2;
+        }
+
+        .location-list strong {
+            color: var(--dark);
+        }
+
+        /* FLOATING CALL BUTTON */
+        .float-call {
+            position: fixed;
+            bottom: 24px;
+            right: 20px;
+            background: var(--blue);
+            color: var(--white);
+            width: 58px;
+            height: 58px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 26px;
+            box-shadow: 0 4px 20px rgba(0, 87, 255, 0.45);
+            text-decoration: none;
+            z-index: 1000;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% {
+                box-shadow: 0 0 0 0 rgba(0, 87, 255, 0.5);
+            }
+
+            70% {
+                box-shadow: 0 0 0 12px rgba(0, 87, 255, 0);
+            }
+
+            100% {
+                box-shadow: 0 0 0 0 rgba(0, 87, 255, 0);
+            }
+        }
+
+        /* FOOTER */
+        footer {
+            background: #0A0F1E;
             color: #64748B;
-            padding: 24px;
+            padding: 24px 20px;
             text-align: center;
             font-size: 13px;
         }
 
         footer a {
             color: #94A3B8;
-            margin: 0 8px;
+            margin: 0 6px;
             text-decoration: underline;
+        }
+
+        footer .f-logo {
+            margin-bottom: 12px;
+        }
+
+        footer .f-logo img {
+            height: 32px;
+        }
+
+        /* MOBILE RESPONSIVE */
+        @media (max-width: 600px) {
+            .nav-phone {
+                font-size: 14px;
+                padding: 8px 14px;
+            }
+
+            .hero-banner {
+                max-height: 260px;
+            }
+
+            .products-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .product-card img {
+                height: 140px;
+            }
         }
     </style>
 </head>
 
 <body>
 
+    <!-- DISCLAIMER BANNER -->
+    <div
+        style="background:#FFF3CD;border-bottom:2px solid #FFC107;padding:9px 16px;text-align:center;font-size:13px;color:#6B4900;font-weight:500;">
+        ⚠️ <strong>Important:</strong> We are an <strong>independent third-party stabilizer repair service</strong>. We
+        are <strong>NOT affiliated with, authorized by, or endorsed by</strong> any stabilizer manufacturer or their
+        authorised service centres.
+    </div>
+
+    <!-- TOP PHONE BAR -->
+    <div class="top-bar">
+        Assistance Call Service Center: &nbsp;<a href="tel:18002026242">📞 1800-202-6242</a>
+    </div>
+
+    <!-- NAV -->
     <nav>
-        <a href="voltage.html" class="nav-logo">
-            <img src="voltage_brand_logo.png" alt="Independent Stabilizer Service Center" />
+        <a href="/" class="nav-logo">
+            <img src="voltage_brand_logo.png" alt="Voltage Service Center" />
         </a>
-        <a href="voltage.html" class="nav-back">← Back to Home</a>
+        <div class="nav-cta">
+            <a class="nav-phone" href="tel:18002026242">📞 Call Now</a>
+        </div>
     </nav>
 
-    <div class="page-header">
-        <h1>Privacy Policy</h1>
-        <p>Independent Stabilizer Service Center</p>
-    </div>
+    <!-- HERO BANNER -->
+    <div class="hero-section">
+        <img class="hero-banner" src="voltage_hero_banner.png" alt="Service Center — Stabilizers, UPS, Inverters" />
 
-    <div class="content">
-        <span class="updated-date">Last Updated: April 2026</span>
-
-        <div class="highlight-box">
-            ⚠️ <strong>Who we are:</strong> We are an <strong>independent third-party stabilizer repair
-                service</strong>. We are NOT affiliated with, authorized by, or endorsed by any voltage stabilizer
-            manufacturer or their authorized service centres. All brand names mentioned are the property of their
-            respective owners.
+        <!-- BOOKING FORM -->
+        <div class="booking-wrap">
+            <div class="book-head">
+                <div class="logo-in-form">
+                    <img src="voltage_brand_logo.png" alt="Voltage Service Center" />
+                </div>
+                <h2>Book Your Service</h2>
+                <p class="sub">Fast repair — all models serviced</p>
+            </div>
+            <form class="booking-form" onsubmit="submitForm(event)">
+                <select required>
+                    <option value="" disabled selected>Select Product</option>
+                    <option>AC Voltage Stabilizer</option>
+                    <option>TV / LED Stabilizer</option>
+                    <option>Refrigerator Stabilizer</option>
+                    <option>Washing Machine Stabilizer</option>
+                    <option>Home UPS / Inverter</option>
+                    <option>Other Stabilizer</option>
+                </select>
+                <select required>
+                    <option value="" disabled selected>Warranty Status</option>
+                    <option>In Warranty</option>
+                    <option>Out of Warranty</option>
+                    <option>Don't Know</option>
+                </select>
+                <input type="text" placeholder="Your Name" required />
+                <input type="tel" placeholder="Phone Number" required pattern="[6-9][0-9]{9}" />
+                <select required>
+                    <option value="" disabled selected>Select City</option>
+                    <option>New Delhi</option>
+                    <option>Noida</option>
+                    <option>Gurgaon</option>
+                    <option>Ghaziabad</option>
+                    <option>Faridabad</option>
+                    <option>Greater Noida</option>
+                    <option>Moradabad</option>
+                    <option>Rampur</option>
+                    <option>Other</option>
+                </select>
+                <button type="submit" class="btn-submit">SUBMIT</button>
+                <div class="form-phone-row">
+                    <a href="tel:18002026242">📞 1800-202-6242</a>
+                </div>
+            </form>
         </div>
-
-        <h2>1. Introduction</h2>
-        <p>This Privacy Policy explains how our independent stabilizer service ("we", "us", "our") collects, uses, and
-            protects your personal information when you visit our website or use our services.</p>
-        <p>By using our website or submitting a booking request, you agree to the terms of this Privacy Policy.</p>
-
-        <h2>2. Information We Collect</h2>
-        <p>We collect information that you voluntarily provide when using our website:</p>
-        <ul>
-            <li><strong>Name</strong> — To address you when we contact you.</li>
-            <li><strong>Phone Number</strong> — To call you back about your stabilizer repair booking.</li>
-            <li><strong>City / Area</strong> — To arrange a technician visit in your area.</li>
-            <li><strong>Product Type &amp; Warranty Status</strong> — To understand your service requirement.</li>
-        </ul>
-        <p>We may also automatically collect non-personal data including browser type, pages visited, and time spent on
-            our site through Google Analytics and Google Ads tags.</p>
-
-        <h2>3. How We Use Your Information</h2>
-        <ul>
-            <li>To call you back and confirm your stabilizer repair booking</li>
-            <li>To assign a technician to your service request</li>
-            <li>To improve our website and service quality</li>
-            <li>To measure advertising effectiveness via Google Ads conversion tracking</li>
-        </ul>
-        <p>We do <strong>not</strong> sell, rent, or trade your personal information to any third party.</p>
-
-        <h2>4. Data Sharing</h2>
-        <p>Your information may be shared with:</p>
-        <ul>
-            <li><strong>Our technicians</strong> — Only name, phone and area to facilitate your service visit.</li>
-            <li><strong>Google Analytics / Google Ads</strong> — Aggregated, anonymised usage data. <a
-                    href="https://policies.google.com/privacy" target="_blank">Google's Privacy Policy</a>.</li>
-        </ul>
-
-        <h2>5. Cookies</h2>
-        <p>Our website uses cookies set by third-party services including Google Analytics and Google Ads. These help us
-            understand how visitors use our site and measure advertising effectiveness. You can disable cookies in your
-            browser settings at any time.</p>
-
-        <h2>6. Data Retention</h2>
-        <p>We retain your booking information only as long as necessary to complete your service request, typically no
-            more than 90 days after your service date. You may request deletion of your data at any time.</p>
-
-        <h2>7. Your Rights</h2>
-        <p>You have the right to:</p>
-        <ul>
-            <li>Request access to the personal data we hold about you</li>
-            <li>Request correction of inaccurate data</li>
-            <li>Request deletion of your data</li>
-            <li>Opt out of marketing communications at any time</li>
-        </ul>
-        <p>To exercise these rights, contact us at <a href="mailto:care@voltagecenter.in">care@voltagecenter.in</a>.</p>
-
-        <h2>8. Data Security</h2>
-        <p>We take reasonable measures to protect your personal information. Our website uses HTTPS encryption and form
-            submissions are transmitted securely. However, no method of transmission over the internet is 100% secure.
-        </p>
-
-        <h2>9. Children's Privacy</h2>
-        <p>Our services are not directed at children under the age of 18. We do not knowingly collect personal
-            information from children.</p>
-
-        <h2>10. Changes to This Policy</h2>
-        <p>We may update this Privacy Policy from time to time. The "Last Updated" date at the top of this page will
-            reflect any changes. Continued use of our website after updates constitutes acceptance of the revised
-            policy.</p>
-
-        <h2>11. Contact Us</h2>
-        <p>If you have any questions about this Privacy Policy, please contact us:</p>
-        <ul>
-            <li><strong>Business:</strong> Independent Stabilizer Service Center</li>
-            <li><strong>Email:</strong> <a href="mailto:care@voltagecenter.in">care@voltagecenter.in</a></li>
-            <li><strong>Phone:</strong> <a href="tel:18002026242">1800-202-6242</a></li>
-            <li><strong>Address:</strong> New Delhi, Delhi – 110001</li>
-        </ul>
     </div>
 
+    <!-- INFO STRIP -->
+    <div class="info-strip">
+        <h3>Stabilizer Service &amp; Repair</h3>
+        <p>Expert stabilizer repair for all types — AC stabilizer, TV stabilizer, refrigerator stabilizer, washing
+            machine stabilizer and home UPS. Skilled technicians, genuine parts, same-day doorstep service across Delhi
+            NCR.</p>
+        <p><strong>FAST REPAIR – GENUINE PARTS – DEPENDABLE SERVICE</strong></p>
+        <a class="cta-inline" href="tel:18002026242">📞 1800-202-6242</a>
+        <div class="badges">
+            <span class="badge-item"><span class="dot"></span> Open 24 Hours</span>
+            <span class="badge-item"><span class="dot"></span> Same Day Visit</span>
+            <span class="badge-item"><span class="dot"></span> All Models Repaired</span>
+            <span class="badge-item"><span class="dot"></span> Genuine Spare Parts</span>
+        </div>
+    </div>
+
+    <!-- PRODUCTS -->
+    <section class="section">
+        <h2 class="section-title">Our Service Products</h2>
+        <p class="section-sub">Select a product to book a service request</p>
+        <div class="products-grid">
+
+            <div class="product-card" onclick="scrollToForm()">
+                <img src="voltage_stabilizer_product.png" alt="AC Stabilizer Service" />
+                <div class="product-card-label">
+                    AC Stabilizer
+                    <small>Split & Window AC</small>
+                </div>
+                <span class="product-card-badge">BOOK SERVICE</span>
+            </div>
+
+            <div class="product-card" onclick="scrollToForm()">
+                <img src="voltage_tv_stabilizer.png" alt="TV Stabilizer Service" />
+                <div class="product-card-label">
+                    TV / LED Stabilizer
+                    <small>All screen sizes</small>
+                </div>
+                <span class="product-card-badge">BOOK SERVICE</span>
+            </div>
+
+            <div class="product-card" onclick="scrollToForm()">
+                <img src="voltage_fridge_stabilizer.png" alt="Refrigerator Stabilizer Service" />
+                <div class="product-card-label">
+                    Refrigerator Stabilizer
+                    <small>Single & double door</small>
+                </div>
+                <span class="product-card-badge">BOOK SERVICE</span>
+            </div>
+
+            <div class="product-card" onclick="scrollToForm()">
+                <img src="voltage_washing_machine_stab.png" alt="Washing Machine Stabilizer" />
+                <div class="product-card-label">
+                    Washing Machine Stabilizer
+                    <small>Top & front load</small>
+                </div>
+                <span class="product-card-badge">BOOK SERVICE</span>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- WHY CHOOSE US -->
+    <div class="why-section">
+        <h2 class="section-title">Why Choose Us</h2>
+        <p class="section-sub">We make stabilizer repair simple and reliable</p>
+        <div class="why-grid">
+            <div class="why-card">
+                <div class="why-icon">⚡</div>
+                <h4>Fast Repair</h4>
+                <p>Most repairs completed within the same visit</p>
+            </div>
+            <div class="why-card">
+                <div class="why-icon">🔧</div>
+                <h4>Expert Technicians</h4>
+                <p>Trained engineers for all stabilizer types</p>
+            </div>
+            <div class="why-card">
+                <div class="why-icon">🛡️</div>
+                <h4>30-Day Warranty</h4>
+                <p>Service warranty on all repair work</p>
+            </div>
+            <div class="why-card">
+                <div class="why-icon">🏠</div>
+                <h4>Doorstep Service</h4>
+                <p>We come to your home — Delhi NCR</p>
+            </div>
+            <div class="why-card">
+                <div class="why-icon">🔩</div>
+                <h4>Genuine Parts</h4>
+                <p>Only quality spare parts used</p>
+            </div>
+            <div class="why-card">
+                <div class="why-icon">📞</div>
+                <h4>24x7 Helpline</h4>
+                <p>Always available on call</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- SEO KEYWORDS SECTION -->
+    <div class="section keywords-section">
+        <div style="max-width:900px;margin:0 auto;">
+
+            <h2>Voltage Stabilizer Repair Complaint</h2>
+            <div class="kw-list">
+                <a class="kw-tag" href="tel:18002026242">Stabilizer Repair Service</a>
+                <a class="kw-tag" href="tel:18002026242">AC Stabilizer Repair</a>
+                <a class="kw-tag" href="tel:18002026242">Stabilizer Not Working</a>
+                <a class="kw-tag" href="tel:18002026242">Stabilizer Tripping</a>
+                <a class="kw-tag" href="tel:18002026242">Stabilizer Burning Smell</a>
+                <a class="kw-tag" href="tel:18002026242">Stabilizer No Output</a>
+                <a class="kw-tag" href="tel:18002026242">Stabilizer Overload</a>
+                <a class="kw-tag" href="tel:18002026242">Stabilizer Customer Care</a>
+                <a class="kw-tag" href="tel:18002026242">Stabilizer Toll Free Number</a>
+                <a class="kw-tag" href="tel:18002026242">Stabilizer Service Near Me</a>
+            </div>
+
+            <h2>AC Stabilizer Complaint</h2>
+            <div class="kw-list">
+                <a class="kw-tag" href="tel:18002026242">Split AC Stabilizer Repair</a>
+                <a class="kw-tag" href="tel:18002026242">Window AC Stabilizer Service</a>
+                <a class="kw-tag" href="tel:18002026242">AC Stabilizer Not Working</a>
+                <a class="kw-tag" href="tel:18002026242">AC Stabilizer Installation</a>
+                <a class="kw-tag" href="tel:18002026242">AC Stabilizer Customer Care</a>
+                <a class="kw-tag" href="tel:18002026242">5 KVA Stabilizer Repair</a>
+                <a class="kw-tag" href="tel:18002026242">AC Stabilizer Repair Near Me</a>
+            </div>
+
+            <h2>TV Stabilizer Complaint</h2>
+            <div class="kw-list">
+                <a class="kw-tag" href="tel:18002026242">LED TV Stabilizer Repair</a>
+                <a class="kw-tag" href="tel:18002026242">TV Stabilizer Not Working</a>
+                <a class="kw-tag" href="tel:18002026242">TV Stabilizer Service Center</a>
+                <a class="kw-tag" href="tel:18002026242">TV Stabilizer Customer Care</a>
+                <a class="kw-tag" href="tel:18002026242">Smart TV Stabilizer Repair</a>
+                <a class="kw-tag" href="tel:18002026242">TV Stabilizer Repair Near Me</a>
+            </div>
+
+            <h2>Refrigerator Stabilizer Complaint</h2>
+            <div class="kw-list">
+                <a class="kw-tag" href="tel:18002026242">Fridge Stabilizer Repair</a>
+                <a class="kw-tag" href="tel:18002026242">Refrigerator Stabilizer Not Working</a>
+                <a class="kw-tag" href="tel:18002026242">Double Door Fridge Stabilizer</a>
+                <a class="kw-tag" href="tel:18002026242">Refrigerator Stabilizer Service</a>
+                <a class="kw-tag" href="tel:18002026242">Fridge Stabilizer Repair Near Me</a>
+            </div>
+
+            <h2>Washing Machine Stabilizer Complaint</h2>
+            <div class="kw-list">
+                <a class="kw-tag" href="tel:18002026242">Washing Machine Stabilizer Repair</a>
+                <a class="kw-tag" href="tel:18002026242">Front Load Stabilizer Service</a>
+                <a class="kw-tag" href="tel:18002026242">Top Load Stabilizer Repair</a>
+                <a class="kw-tag" href="tel:18002026242">Washing Machine Stabilizer Near Me</a>
+                <a class="kw-tag" href="tel:18002026242">Washing Machine Stabilizer Customer Care</a>
+            </div>
+
+            <h2>Location</h2>
+            <p class="location-list">
+                <strong>New Delhi</strong> | <strong>Noida</strong> | <strong>Gurgaon</strong> |
+                <strong>Ghaziabad</strong> | <strong>Faridabad</strong> | <strong>Greater Noida</strong> |
+                <strong>Moradabad</strong> | <strong>Rampur</strong> | Dwarka | Rohini | Janakpuri |
+                Laxmi Nagar | Preet Vihar | Pitampura | Saket | Vasant Kunj | Sector 62 Noida |
+                Sector 18 Noida | Indirapuram | Vaishali | Raj Nagar Extension
+            </p>
+
+        </div>
+    </div>
+
+    <!-- FLOATING CALL BUTTON -->
+    <a class="float-call" href="tel:18002026242" title="Call Now">📞</a>
+
+    <!-- FOOTER -->
     <footer>
-        <p>© 2026 Independent Stabilizer Service Center — Third-Party Repair Service | Not affiliated with any
-            manufacturer</p>
+        <div class="f-logo">
+            <img src="voltage_brand_logo.png" alt="Independent Stabilizer Service Center" style="height:38px;" />
+        </div>
+        <p>Voltage Stabilizer Service Center — Independent Repair Service | Delhi NCR</p>
         <p style="margin-top:8px;">
-            <a href="voltage.html">Home</a> |
+            <a href="tel:18002026242">📞 1800-202-6242</a> &nbsp;|&nbsp;
+            <a href="mailto:care@voltagecenter.in">care@voltagecenter.in</a>
+        </p>
+        <p style="margin-top:8px;">
             <a href="voltage-privacy.html">Privacy Policy</a> |
             <a href="voltage-terms.html">Terms &amp; Conditions</a>
         </p>
+        <p style="margin-top:10px;font-size:12px;color:#94A3B8;">
+            ⚠️ <strong style="color:#94A3B8;">Independent Service Provider Disclaimer:</strong> We are a third-party
+            independent repair service. We are NOT affiliated with, authorised by, or endorsed by any voltage stabilizer
+            manufacturer or their authorised service centres. All brand names and trademarks are the property of their
+            respective owners.
+        </p>
     </footer>
+
+    <script>
+        function scrollToForm() {
+            document.querySelector('.booking-wrap').scrollIntoView({ behavior: 'smooth' });
+        }
+        function submitForm(e) {
+            e.preventDefault();
+            const phone = document.querySelector('input[type="tel"]').value;
+            if (phone.length === 10) {
+                alert('Thank you! Our team will call you back shortly.\n\nFor instant support call: 1800-202-6242');
+                e.target.reset();
+            }
+        }
+    </script>
 
 </body>
 
